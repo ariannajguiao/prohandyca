@@ -1,0 +1,44 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the header of the site/application.
+// -----------------------------------------------------------------------------
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+    transition: background-color .3s ease-in;
+
+    .fa-bars {
+        color: $energy-yellow;
+        font-size: 28px;
+    }
+
+    &.solid {
+        background-color: $white;
+        box-shadow: 0 0 6px rgba(0,0,0,.3);
+
+        .nav-link, .navbar-brand {
+            color: $maire;
+        }
+
+        .nav-link.btn-default {
+            color: $energy-yellow;
+        }
+    }
+
+    &-brand {
+        font-size: 43px;
+        font-weight: 800;
+        color: $sugar-cane;
+    }
+
+    .nav-link {
+        font-weight: 600;
+        font-size: 20px;
+        color: $sugar-cane;
+    }    
+
+    .nav-item {     
+        padding: 0 25px;
+    }
+}

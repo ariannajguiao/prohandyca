@@ -1,0 +1,32 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the footer of the site/application.
+// -----------------------------------------------------------------------------
+
+footer {
+    padding: 20px;
+    background-color: $maire;
+
+    h3, h3 span, .text-desc, ul li, a {
+        color: $sugar-cane;
+    }
+
+    h3, h3 span {
+        font-size: 24px;
+    }
+
+    .text-desc, footer ul li, footer a {
+        font-size: 14px;
+    }
+
+    .separator {
+        width: 80px;
+        max-width: 100%;
+        border-top: 3px solid $energy-yellow; 
+    }
+}
+
+.footer-end {
+    background-color: $black;
+    font-style: 10px;
+    padding: 3px 0;
+}

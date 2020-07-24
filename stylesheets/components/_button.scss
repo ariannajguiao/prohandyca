@@ -1,0 +1,35 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the button component.
+// -----------------------------------------------------------------------------
+
+.navbar-nav .nav-link.btn-default, .btn-default {
+    border: 2px solid $energy-yellow;
+    border-radius: 30px;
+    padding: 6px 25px;
+    transition: all .3s ease-in-out;
+    font-weight: bold;
+    font-size: 18px;
+
+    &.btn-transparent {
+        background-color: transparent;
+    
+        &:hover {
+            background-color: $energy-yellow;
+            color: $sugar-cane;
+        }
+    }
+} 
+
+
+.btn {
+    &-yellow {
+        background-color: $energy-yellow;
+        color: $sugar-cane;
+        
+        &:hover {
+            background-color: $sugar-cane;
+            color: $energy-yellow;
+            text-decoration: none;
+        }
+    }
+}
