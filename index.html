@@ -1,235 +1,288 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="stylesheets/vendors/bootstrap.min.css" />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="stylesheets/vendors/swiper.min.css"
-    />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
-    <link rel="stylesheet" href="css/main.css" />
-    <link rel="icon" href="assets/images/favicon.png" />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
-    <title>ProHandy</title>
-  </head>
 
-  <body>
-    <header>
-      <nav class="navbar navbar-expand-lg">
-        <div class="container">
-          <a class="navbar-brand" href="#">PROHANDY</a>
-          <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item active">
-                <a class="nav-link" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Services</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link btn-default btn-transparent" href="#">Book Appointment</a>
-              </li>
-            </ul>
-          </div>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarTogglerDemo03"
-            aria-controls="navbarTogglerDemo03"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="stylesheets/vendors/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="stylesheets/vendors/swiper.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+  <title>ProHandy</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-default navbar-expand-lg" role="navigation">
+      <div class="master-container container">
+        <a class="navbar-brand" href="#">
+          <img src="./assets/img/prohandy logo-white.svg" alt="Prohandy" class="navbar-logo" />
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon">
             <i class="fas fa-bars"></i>
-          </button>
+          </span>
+        </button>
+        <div class="collapse navbar-collapse main-menu" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link btn-default btn-transparent" href="#book-appointment">Book Appointment</a>
+            </li>
+          </ul>
         </div>
-      </nav>
-    </header>
-    <main class="home">
-      <div class="swiper-holder">
-        <div class="swiper-container swiper-banner">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide section-banner" style="background-image: url('./assets/img/banner.jpg');">
-              <div class="container">
-                <div class="banner-content">
-                  <h1>Lorem <span class="text-light">Ipsum Dolor</span></h1>
-                  <p class="text-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mattis enim ut tellus elementum sagittis vitae et leo duis. Nulla posuere sollicitudin aliquam ultrices sagittis. Laoreet non curabitur gravida arcu ac tortor dignissim. Enim neque volutpat ac tincidunt vitae semper. Dictum fusce ut placerat orci nulla pellentesque dignissim enim. Diam donec adipiscing tristique risus nec feugiat. Amet cursus sit amet dictum. Viverra nibh cras pulvinar mattis nunc sed blandit. Maecenas pharetra convallis posuere morbi leo urna. Faucibus in ornare quam viverra orci sagittis eu volutpat. Aliquam etiam erat velit scelerisque in dictum non consectetur a.</p>
-                    <a href="#" class="btn-default btn-yellow">Book Now</a>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide section-banner" style="background-image: url('./assets/img/banner.jpg');">
-              <div class="container">
-                <div class="banner-content">
-                  <h1>Lorem <span class="text-light">Ipsum Dolor 2</span></h1>
-                  <p class="text-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mattis enim ut tellus elementum sagittis vitae et leo duis. Nulla posuere sollicitudin aliquam ultrices sagittis. Laoreet non curabitur gravida arcu ac tortor dignissim. Enim neque volutpat ac tincidunt vitae semper. Dictum fusce ut placerat orci nulla pellentesque dignissim enim. Diam donec adipiscing tristique risus nec feugiat. Amet cursus sit amet dictum. Viverra nibh cras pulvinar mattis nunc sed blandit. Maecenas pharetra convallis posuere morbi leo urna. Faucibus in ornare quam viverra orci sagittis eu volutpat. Aliquam etiam erat velit scelerisque in dictum non consectetur a.</p>
-                    <a href="#" class="btn-default btn-yellow">Book Now</a>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide section-banner" style="background-image: url('./assets/img/banner.jpg');">
-              <div class="container">
-                <div class="banner-content">
-                  <h1>Lorem <span class="text-light">Ipsum Dolor 3</span></h1>
-                  <p class="text-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mattis enim ut tellus elementum sagittis vitae et leo duis. Nulla posuere sollicitudin aliquam ultrices sagittis. Laoreet non curabitur gravida arcu ac tortor dignissim. Enim neque volutpat ac tincidunt vitae semper. Dictum fusce ut placerat orci nulla pellentesque dignissim enim. Diam donec adipiscing tristique risus nec feugiat. Amet cursus sit amet dictum. Viverra nibh cras pulvinar mattis nunc sed blandit. Maecenas pharetra convallis posuere morbi leo urna. Faucibus in ornare quam viverra orci sagittis eu volutpat. Aliquam etiam erat velit scelerisque in dictum non consectetur a.</p>
-                    <a href="#" class="btn-default btn-yellow">Book Now</a>
-                </div>
+      </div>
+    </nav>
+  </header>
+  <main class="home">
+    <div class="swiper-holder">
+      <div class="swiper-container swiper-banner">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide section-banner" style="background-image: url('./assets/img/banner.jpg');">
+            <div class="container">
+              <div class="banner-content">
+                <h1>Lorem <span class="text-light">Ipsum Dolor</span></h1>
+                <p class="text-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                  incididunt ut labore et dolore magna aliqua. Mattis enim ut tellus elementum sagittis vitae et leo
+                  duis. Nulla posuere sollicitudin aliquam ultrices sagittis. Laoreet non curabitur gravida arcu ac
+                  tortor dignissim. Enim neque volutpat ac tincidunt vitae semper. Dictum fusce ut placerat orci nulla
+                  pellentesque dignissim enim. Diam donec adipiscing tristique risus nec feugiat. Amet cursus sit amet
+                  dictum. Viverra nibh cras pulvinar mattis nunc sed blandit. Maecenas pharetra convallis posuere morbi
+                  leo urna. Faucibus in ornare quam viverra orci sagittis eu volutpat. Aliquam etiam erat velit
+                  scelerisque in dictum non consectetur a.</p>
+                <a href="#book-appointment" class="btn-default btn-yellow">Book Now</a>
               </div>
             </div>
           </div>
-          <!-- Add Pagination -->
-          <div class="swiper-pagination"></div>
-        </div>
-      </div>
-      <div class="section-about">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6">
-              <div class="img-holder">
-                <img src="./assets/img/plumbing.jpg" alt="Plumbing" class="img-about" />
-              </div>
-            </div>
-            <div class="col-md-6 my-auto">
-              <div class="content-holder">
-                <h2 class="text-300"><span class="text-sm text-bold">10 Years of Experience</span>in the Business</h2>
-                <hr class="separator" align="left" />
-                <p class="text-desc">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mattis enim ut tellus elementum sagittis vitae et leo duis. Nulla posuere sollicitudin aliquam ultrices sagittis. Laoreet non curabitur gravida arcu ac tortor dignissim. Enim neque volutpat ac tincidunt vitae semper.
-                </p>
+          <div class="swiper-slide section-banner" style="background-image: url('./assets/img/banner.jpg');">
+            <div class="container">
+              <div class="banner-content">
+                <h1>Lorem <span class="text-light">Ipsum Dolor 2</span></h1>
+                <p class="text-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                  incididunt ut labore et dolore magna aliqua. Mattis enim ut tellus elementum sagittis vitae et leo
+                  duis. Nulla posuere sollicitudin aliquam ultrices sagittis. Laoreet non curabitur gravida arcu ac
+                  tortor dignissim. Enim neque volutpat ac tincidunt vitae semper. Dictum fusce ut placerat orci nulla
+                  pellentesque dignissim enim. Diam donec adipiscing tristique risus nec feugiat. Amet cursus sit amet
+                  dictum. Viverra nibh cras pulvinar mattis nunc sed blandit. Maecenas pharetra convallis posuere morbi
+                  leo urna. Faucibus in ornare quam viverra orci sagittis eu volutpat. Aliquam etiam erat velit
+                  scelerisque in dictum non consectetur a.</p>
+                <a href="#book-appointment" class="btn-default btn-yellow">Book Now</a>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-      <div class="section-services">
-        <div class="container">
-          <div class="row">
-            <div class="col-12">
-              <h2>OUR SERVICES</h2>
-              <p class="text-desc">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mattis enim ut tellus elementum sagittis vitae et leo duis. Nulla posuere sollicitudin aliquam ultrices sagittis. Laoreet non curabitur gravida arcu ac tortor dignissim. Enim neque volutpat ac tincidunt vitae semper. Dictum fusce ut placerat orci nulla pellentesque dignissim enim. Diam donec adipiscing tristique risus nec feugiat. Amet cursus sit amet dictum. Viverra nibh cras pulvinar mattis nunc sed blandit. Maecenas pharetra convallis posuere morbi leo urna. Faucibus in ornare quam viverra orci sagittis eu volutpat. Aliquam etiam erat velit scelerisque in dictum non consectetur a
-              </p>
-              <ul class="service-list">
-                <li>
-                  <div class="icon-holder">
-                    <i class="fas fa-bolt"></i>
-                  </div>
-                  <div class="content-holder">
-                    <a href="#" class="service-link"><h5 class="list-title text-bold">MOUNTING</h5></a>
-                    <p class="text-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mattis enim ut tellus elementum sagittis vitae et leo duis. Nulla posuere sollicitudin aliquam ultrices sagittis.</p>
-                  </div>
-                </li>
-                <li>
-                  <div class="icon-holder">
-                    <i class="fas fa-bolt"></i>
-                  </div>
-                  <div class="content-holder">
-                    <a href="#" class="service-link"><h5 class="list-title text-bold">MOUNTING</h5></a>
-                    <p class="text-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mattis enim ut tellus elementum sagittis vitae et leo duis. Nulla posuere sollicitudin aliquam ultrices sagittis.</p>
-                  </div>
-                </li>
-                <li>
-                  <div class="icon-holder">
-                    <i class="fas fa-bolt"></i>
-                  </div>
-                  <div class="content-holder">
-                    <a href="#" class="service-link"><h5 class="list-title text-bold">MOUNTING</h5></a>
-                    <p class="text-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mattis enim ut tellus elementum sagittis vitae et leo duis. Nulla posuere sollicitudin aliquam ultrices sagittis.</p>
-                  </div>
-                </li>
-                <li>
-                  <div class="icon-holder">
-                    <i class="fas fa-bolt"></i>
-                  </div>
-                  <div class="content-holder">
-                    <a href="#" class="service-link"><h5 class="list-title text-bold">MOUNTING</h5></a>
-                    <p class="text-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mattis enim ut tellus elementum sagittis vitae et leo duis. Nulla posuere sollicitudin aliquam ultrices sagittis.</p>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="section-testimonials" style="background-image: url('./assets/img/elecrtical.jpg');">
-        <div class="container">
-          <div class="row">
-            <div class="col-12">
-              <h2 class="text-center text-yellow"><span class="text-sm text-300 text-light">OUR TESTIMONIALS</span>WHAT OUR CLIENTS SAY</h2>
-              <div class="swiper-container swiper-testimonial">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide testi">
-                    <blockquote>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mattis enim ut tellus elementum sagittis vitae et leo duis. Nulla posuere sollicitudin aliquam ultrices sagittis.
-                    </blockquote>
-                    <h6 class="client-name">John Doe, <span class="client-title">Home Owner</span></h6>
-                  </div>
-                  <div class="swiper-slide testi">
-                    <blockquote>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mattis enim ut tellus elementum sagittis vitae et leo duis.
-                    </blockquote>
-                    <h6 class="client-name">John Doe, <span class="client-title">Home Owner</span></h6>
-                  </div>
-                  <div class="swiper-slide testi">
-                    <blockquote>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mattis enim ut tellus elementum sagittis vitae et leo duis. Nulla posuere sollicitudin aliquam ultrices sagittis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mattis enim ut tellus elementum sagittis vitae et leo duis.
-                    </blockquote>
-                    <h6 class="client-name">John Doe, <span class="client-title">Home Owner</span></h6>
-                  </div>
-                </div>
-                <div class="swiper-button-next swiper-button-white"></div>
-                <div class="swiper-button-prev swiper-button-white"></div>
+          <div class="swiper-slide section-banner" style="background-image: url('./assets/img/banner.jpg');">
+            <div class="container">
+              <div class="banner-content">
+                <h1>Lorem <span class="text-light">Ipsum Dolor 3</span></h1>
+                <p class="text-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                  incididunt ut labore et dolore magna aliqua. Mattis enim ut tellus elementum sagittis vitae et leo
+                  duis. Nulla posuere sollicitudin aliquam ultrices sagittis. Laoreet non curabitur gravida arcu ac
+                  tortor dignissim. Enim neque volutpat ac tincidunt vitae semper. Dictum fusce ut placerat orci nulla
+                  pellentesque dignissim enim. Diam donec adipiscing tristique risus nec feugiat. Amet cursus sit amet
+                  dictum. Viverra nibh cras pulvinar mattis nunc sed blandit. Maecenas pharetra convallis posuere morbi
+                  leo urna. Faucibus in ornare quam viverra orci sagittis eu volutpat. Aliquam etiam erat velit
+                  scelerisque in dictum non consectetur a.</p>
+                <a href="#book-appointment" class="btn-default btn-yellow">Book Now</a>
               </div>
             </div>
           </div>
         </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
       </div>
-      <div class="section-booking">
-        <div class="img-holder" style="background-image: url('./assets/img/mounting.jpg');"></div>
-        <div class="form-holder">form</div>
-      </div>
-
-    </main>
-    <footer>
+    </div>
+    <div class="section-about">
       <div class="container">
         <div class="row">
           <div class="col-md-6">
-            <h3><span class="text-300">About </span>Prohandy</h3>
-            <hr class="separator" align="left" />
-            <p class="text-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mattis enim ut tellus elementum sagittis vitae et leo duis. Nulla posuere sollicitudin aliquam ultrices sagittis. Laoreet non curabitur gravida arcu ac tortor dignissim. Enim neque volutpat ac tincidunt vitae semper. Dictum fusce ut placerat orci nulla pellentesque dignissim enim.</p>
+            <div class="img-holder">
+              <img src="./assets/img/plumbing.jpg" alt="Plumbing" class="img-about" />
+            </div>
           </div>
-          <div class="col-md-3">
-            <h3><span class="text-300">Contact </span>Us</h3>
-            <hr class="separator" align="left" />
-            <ul class="contact-list">
-              <li>Address: <a href="http://" target="_blank" rel="noopener noreferrer">801-6021 Yonge St. North York, ON M2M 3K2</a></li>
-              <li>Phone: <a href="tel:+6475252931">(647) 525-2931</a></li>
-              <li>E-mail: <a href="mailto:customersupport@prohandy.ca">customersupport@prohandy.ca</a></li>
-            </ul>
+          <div class="col-md-6 my-auto">
+            <div class="content-holder">
+              <h2 class="text-300"><span class="text-sm text-bold">10 Years of Experience</span>in the Business</h2>
+              <hr class="separator" align="left" />
+              <p class="text-desc">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Mattis enim ut tellus elementum sagittis vitae et leo duis. Nulla posuere
+                sollicitudin aliquam ultrices sagittis. Laoreet non curabitur gravida arcu ac tortor dignissim. Enim
+                neque volutpat ac tincidunt vitae semper.
+              </p>
+            </div>
           </div>
-          <div class="col-md-3">
-            <h3><span class="text-300">Useful </span>Links</h3>
-            <hr class="separator" align="left" />
-            <ul class="footer-nav">
-              <li><a href="#" class="footer-link">About Us</a></li>
-              <li><a href="#" class="footer-link">Services</a></li>
-              <li><a href="#" class="footer-link">Gallery</a></li>
-              <li><a href="#" class="footer-link">Contact Us</a></li>
+        </div>
+      </div>
+    </div>
+    <div class="section-services">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2>OUR SERVICES</h2>
+            <p class="text-desc">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Mattis enim ut tellus elementum sagittis vitae et leo duis. Nulla posuere
+              sollicitudin aliquam ultrices sagittis. Laoreet non curabitur gravida arcu ac tortor dignissim. Enim neque
+              volutpat ac tincidunt vitae semper. Dictum fusce ut placerat orci nulla pellentesque dignissim enim. Diam
+              donec adipiscing tristique risus nec feugiat. Amet cursus sit amet dictum. Viverra nibh cras pulvinar
+              mattis nunc sed blandit. Maecenas pharetra convallis posuere morbi leo urna. Faucibus in ornare quam
+              viverra orci sagittis eu volutpat. Aliquam etiam erat velit scelerisque in dictum non consectetur a
+            </p>
+            <ul class="service-list">
+              <li>
+                <div class="icon-holder">
+                  <i class="fas fa-bolt"></i>
+                </div>
+                <div class="content-holder">
+                  <a href="#" class="service-link">
+                    <h5 class="list-title text-bold">MOUNTING</h5>
+                  </a>
+                  <p class="text-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Mattis enim ut tellus elementum sagittis vitae et leo
+                    duis. Nulla posuere sollicitudin aliquam ultrices sagittis.</p>
+                </div>
+              </li>
+              <li>
+                <div class="icon-holder">
+                  <i class="fas fa-bolt"></i>
+                </div>
+                <div class="content-holder">
+                  <a href="#" class="service-link">
+                    <h5 class="list-title text-bold">MOUNTING</h5>
+                  </a>
+                  <p class="text-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Mattis enim ut tellus elementum sagittis vitae et leo
+                    duis. Nulla posuere sollicitudin aliquam ultrices sagittis.</p>
+                </div>
+              </li>
+              <li>
+                <div class="icon-holder">
+                  <i class="fas fa-bolt"></i>
+                </div>
+                <div class="content-holder">
+                  <a href="#" class="service-link">
+                    <h5 class="list-title text-bold">MOUNTING</h5>
+                  </a>
+                  <p class="text-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Mattis enim ut tellus elementum sagittis vitae et leo
+                    duis. Nulla posuere sollicitudin aliquam ultrices sagittis.</p>
+                </div>
+              </li>
+              <li>
+                <div class="icon-holder">
+                  <i class="fas fa-bolt"></i>
+                </div>
+                <div class="content-holder">
+                  <a href="#" class="service-link">
+                    <h5 class="list-title text-bold">MOUNTING</h5>
+                  </a>
+                  <p class="text-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Mattis enim ut tellus elementum sagittis vitae et leo
+                    duis. Nulla posuere sollicitudin aliquam ultrices sagittis.</p>
+                </div>
+              </li>
             </ul>
           </div>
         </div>
       </div>
-    </footer>
-    <div class="footer-end text-center text-light">&#169; 2020 Prohandy. All Rights Reserved.</div>
+    </div>
+    <div class="section-testimonials" style="background-image: url('./assets/img/elecrtical.jpg');">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="text-center text-yellow"><span class="text-sm text-300 text-light">OUR TESTIMONIALS</span>WHAT
+              OUR CLIENTS SAY</h2>
+            <div class="swiper-container swiper-testimonial">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide testi">
+                  <blockquote>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Mattis enim ut tellus elementum sagittis vitae et leo duis. Nulla posuere
+                    sollicitudin aliquam ultrices sagittis.
+                  </blockquote>
+                  <h6 class="client-name">John Doe, <span class="client-title">Home Owner</span></h6>
+                </div>
+                <div class="swiper-slide testi">
+                  <blockquote>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Mattis enim ut tellus elementum sagittis vitae et leo duis.
+                  </blockquote>
+                  <h6 class="client-name">John Doe, <span class="client-title">Home Owner</span></h6>
+                </div>
+                <div class="swiper-slide testi">
+                  <blockquote>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Mattis enim ut tellus elementum sagittis vitae et leo duis. Nulla posuere
+                    sollicitudin aliquam ultrices sagittis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mattis enim ut tellus elementum
+                    sagittis vitae et leo duis.
+                  </blockquote>
+                  <h6 class="client-name">John Doe, <span class="client-title">Home Owner</span></h6>
+                </div>
+              </div>
+              <div class="swiper-button-next swiper-button-white"></div>
+              <div class="swiper-button-prev swiper-button-white"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section-booking">
+      <div class="img-holder" style="background-image: url('./assets/img/mounting.jpg');"></div>
+      <div class="form-holder" id="book-appointment">form</div>
+    </div>
 
-    <script src="javascripts/plugins.js"></script>
-    <script src="javascripts/main.js"></script>
-  </body>
+  </main>
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h3><span class="text-300">About </span>Prohandy</h3>
+          <hr class="separator" align="left" />
+          <p class="text-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+            ut labore et dolore magna aliqua. Mattis enim ut tellus elementum sagittis vitae et leo duis. Nulla posuere
+            sollicitudin aliquam ultrices sagittis. Laoreet non curabitur gravida arcu ac tortor dignissim. Enim neque
+            volutpat ac tincidunt vitae semper. Dictum fusce ut placerat orci nulla pellentesque dignissim enim.</p>
+        </div>
+        <div class="col-md-3">
+          <h3><span class="text-300">Contact </span>Us</h3>
+          <hr class="separator" align="left" />
+          <ul class="contact-list">
+            <li>Address: <a href="http://" target="_blank" rel="noopener noreferrer">801-6021 Yonge St. North York, ON
+                M2M 3K2</a></li>
+            <li>Phone: <a href="tel:+6475252931">(647) 525-2931</a></li>
+            <li>E-mail: <a href="mailto:customersupport@prohandy.ca">customersupport@prohandy.ca</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h3><span class="text-300">Useful </span>Links</h3>
+          <hr class="separator" align="left" />
+          <ul class="footer-nav">
+            <li><a href="#" class="footer-link">About Us</a></li>
+            <li><a href="#" class="footer-link">Services</a></li>
+            <li><a href="#" class="footer-link">Gallery</a></li>
+            <li><a href="#" class="footer-link">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="footer-end text-center text-light">&#169; 2020 Prohandy. All Rights Reserved.</div>
+
+  <script src="javascripts/plugins.js"></script>
+  <script src="javascripts/main.js"></script>
+</body>
+
 </html>

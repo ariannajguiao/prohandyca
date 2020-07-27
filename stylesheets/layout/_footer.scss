@@ -3,30 +3,52 @@
 // -----------------------------------------------------------------------------
 
 footer {
-    padding: 20px;
-    background-color: $maire;
+  padding: 20px 0;
+  background-color: $maire;
 
-    h3, h3 span, .text-desc, ul li, a {
-        color: $sugar-cane;
-    }
+  h3,
+  h3 span,
+  .text-desc,
+  ul li,
+  a {
+    color: $sugar-cane;
+    transition: all 0.3s ease-in-out;
+  }
 
-    h3, h3 span {
-        font-size: 24px;
+  a {
+    &:hover {
+      color: $energy-yellow;
     }
+  }
 
-    .text-desc, footer ul li, footer a {
-        font-size: 14px;
-    }
+  h3,
+  h3 span {
+    font-size: 24px;
+  }
 
-    .separator {
-        width: 80px;
-        max-width: 100%;
-        border-top: 3px solid $energy-yellow; 
-    }
+  .text-desc,
+  footer ul li,
+  footer a {
+    font-size: 14px;
+  }
+
+  .separator {
+    width: 80px;
+    max-width: 100%;
+    border-top: 3px solid $energy-yellow;
+  }
 }
 
 .footer-end {
-    background-color: $black;
-    font-style: 10px;
-    padding: 3px 0; 
+  font-style: 10px;
+  padding: 3px 0;
+  background-color: $black;
+}
+
+@include respond-to(sm-down) {
+  footer {
+    .separator {
+      margin: 13px 0;
+    }
+  }
 }

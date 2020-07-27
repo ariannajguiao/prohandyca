@@ -307,7 +307,8 @@ template {
  * Set up a decent box model on the root element
  */
 html {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  scroll-behavior: smooth; }
 
 /**
  * Make all elements from the DOM inherit from the parent box-sizing
@@ -326,7 +327,7 @@ html {
 a {
   color: #e50050;
   text-decoration: none; }
-  a:hover, a:active, a:focus {
+  a:active, a:focus, a:hover {
     color: #222222;
     text-decoration: underline; }
 
@@ -342,14 +343,21 @@ img {
   width: 150px;
   max-width: 100%; }
 
-ul li, ul {
+ul li,
+ul {
   padding-left: 0;
   list-style: none; }
+
+@media screen and (max-width: 767px) {
+  .separator {
+    margin: 0 auto 25px; } }
 
 /**
  * Basic typography style for copy text
  */
-*, body, a {
+*,
+body,
+a {
   font-family: "Roboto", sans-serif;
   color: #242423; }
 
@@ -388,6 +396,19 @@ h2.text-yellow {
 
 .text-light {
   color: #e8eddf; }
+
+@media screen and (max-width: 991px) {
+  h1 {
+    font-size: 40px; }
+  .text-desc {
+    font-size: 15px; } }
+
+@media screen and (max-width: 767px) {
+  h2 {
+    text-align: center;
+    font-size: 30px; }
+  .text-sm {
+    font-size: 17px; } }
 
 /**
  * Clear inner floats
@@ -448,16 +469,21 @@ h2.text-yellow {
   position: fixed;
   width: 100%;
   z-index: 99;
-  transition: background-color .3s ease-in; }
+  transition: background-color 0.3s ease-in; }
   .navbar .fa-bars {
     color: #f5cb5c;
     font-size: 28px; }
-  .navbar.solid {
+  .navbar-logo {
+    width: auto;
+    height: 40px; }
+  .navbar.bg-white, .navbar.bg-white-toggle {
     background-color: #fff;
     box-shadow: 0 0 6px rgba(0, 0, 0, 0.3); }
-    .navbar.solid .nav-link, .navbar.solid .navbar-brand {
+    .navbar.bg-white .nav-link,
+    .navbar.bg-white .navbar-brand, .navbar.bg-white-toggle .nav-link,
+    .navbar.bg-white-toggle .navbar-brand {
       color: #242423; }
-    .navbar.solid .nav-link.btn-default {
+    .navbar.bg-white .nav-link.btn-default, .navbar.bg-white-toggle .nav-link.btn-default {
       color: #f5cb5c; }
   .navbar-brand {
     font-size: 43px;
@@ -465,19 +491,41 @@ h2.text-yellow {
     color: #e8eddf; }
   .navbar .nav-link {
     font-weight: 600;
-    font-size: 20px;
+    font-size: 17px;
     color: #e8eddf; }
   .navbar .nav-item {
-    padding: 0 25px; }
+    padding: 0 15px; }
+
+.navbar-nav .nav-link.btn-default.btn-transparent,
+.btn-default.btn-transparent {
+  font-size: 17px; }
+
+@media screen and (max-width: 991px) {
+  .navbar-nav .nav-link.btn-default.btn-transparent,
+  .btn-default.btn-transparent {
+    width: 100%;
+    display: table-cell;
+    border: none;
+    padding: 4px 0; } }
 
 footer {
-  padding: 20px;
+  padding: 20px 0;
   background-color: #242423; }
-  footer h3, footer h3 span, footer .text-desc, footer ul li, footer a {
-    color: #e8eddf; }
-  footer h3, footer h3 span {
+  footer h3,
+  footer h3 span,
+  footer .text-desc,
+  footer ul li,
+  footer a {
+    color: #e8eddf;
+    transition: all 0.3s ease-in-out; }
+  footer a:hover {
+    color: #f5cb5c; }
+  footer h3,
+  footer h3 span {
     font-size: 24px; }
-  footer .text-desc, footer footer ul li, footer footer a {
+  footer .text-desc,
+  footer footer ul li,
+  footer footer a {
     font-size: 14px; }
   footer .separator {
     width: 80px;
@@ -485,9 +533,13 @@ footer {
     border-top: 3px solid #f5cb5c; }
 
 .footer-end {
-  background-color: #000;
   font-style: 10px;
-  padding: 3px 0; }
+  padding: 3px 0;
+  background-color: #000; }
+
+@media screen and (max-width: 767px) {
+  footer .separator {
+    margin: 13px 0; } }
 
 .navbar-nav .nav-link.btn-default, .btn-default {
   border: 2px solid #f5cb5c;
@@ -516,7 +568,7 @@ footer {
   position: relative;
   z-index: 1; }
   .home .section-banner:after {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
@@ -547,7 +599,7 @@ footer {
     max-width: 100%;
     position: relative; }
     .home .section-about .img-holder:after {
-      content: '';
+      content: "";
       width: 100%;
       height: 100%;
       border: 5px solid #f5cb5c;
@@ -593,7 +645,7 @@ footer {
   z-index: 1;
   padding: 80px 0; }
   .home .section-testimonials:after {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
@@ -612,13 +664,13 @@ footer {
     margin-top: 60px;
     position: relative; }
     .home .section-testimonials blockquote:before {
-      content: '\201C';
+      content: "\201C";
       font-size: 106px;
       position: absolute;
       top: -45px;
       left: -35px;
       color: #f5cb5c;
-      font-family: 'Proxima Nova', 'Helvetica', sans-serif; }
+      font-family: "Proxima Nova", "Helvetica", sans-serif; }
   .home .section-testimonials h6 {
     font-weight: 300;
     font-size: 22px;
@@ -643,3 +695,24 @@ footer {
     width: 100%;
     height: auto;
     flex: 1; }
+
+@media screen and (max-width: 767px) {
+  .home .section-about {
+    padding: 30px 0; }
+    .home .section-about .img-holder {
+      margin: 0 auto 85px; }
+  .home .section-services {
+    padding: 30px 0; }
+  .home .section-testimonials {
+    padding: 30px 0; }
+    .home .section-testimonials h6 {
+      font-size: 17px; }
+    .home .section-testimonials blockquote {
+      font-size: 20px;
+      margin: 35px auto; }
+      .home .section-testimonials blockquote::before {
+        left: -20px; }
+  .home .section-booking {
+    flex-direction: column; }
+    .home .section-booking > div {
+      min-height: 450px; } }

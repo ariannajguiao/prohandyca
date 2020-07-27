@@ -7,6 +7,7 @@
  */
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 /**
@@ -49,8 +50,14 @@ img {
   max-width: 100%;
 }
 
-ul li, ul {
+ul li,
+ul {
   padding-left: 0;
   list-style: none;
 }
 
+@include respond-to(sm-down) {
+  .separator {
+    margin: 0 auto 25px;
+  }
+}

@@ -2,39 +2,41 @@
  * Basic typography style for copy text
  */
 
- *, body, a {
+*,
+body,
+a {
   font-family: $font-roboto;
   color: $maire;
- }
+}
 
- h1 {
+h1 {
   font-family: $font-heading;
   font-size: 65px;
   font-weight: bolder;
   color: $energy-yellow;
   margin: 0 0 18px;
-  
+
   .text-light {
     font-family: $font-heading;
   }
- }
+}
 
- .text-sm {
-   font-size: 25px;
- }
+.text-sm {
+  font-size: 25px;
+}
 
- .text-bold {
-   font-weight: bold;
- }
+.text-bold {
+  font-weight: bold;
+}
 
- h2 {
-   font-size: 40px;
-   font-weight: bold;
-  
-   span {
-     display: block;
-   }
- }
+h2 {
+  font-size: 40px;
+  font-weight: bold;
+
+  span {
+    display: block;
+  }
+}
 
 h3 {
   font-size: 45px;
@@ -55,4 +57,25 @@ h2.text-yellow {
 
 .text-light {
   color: $sugar-cane;
+}
+
+@include respond-to(md-down) {
+  h1 {
+    font-size: 40px;
+  }
+
+  .text-desc {
+    font-size: 15px;
+  }
+}
+
+@include respond-to(sm-down) {
+  h2 {
+    text-align: center;
+    font-size: 30px;
+  }
+
+  .text-sm {
+    font-size: 17px;
+  }
 }
